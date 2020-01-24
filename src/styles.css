@@ -1,0 +1,14 @@
+.row-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.row-content {
+  width: 85rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

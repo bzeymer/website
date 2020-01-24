@@ -1,0 +1,23 @@
+.header {
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.header .content {
+  padding-top: 4px;
+}
+
+.header .logo {
+  font-family: 'Special Elite', cursive;
+  font-size: 29px;
+  user-select: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  padding-top: 4px;
+}
