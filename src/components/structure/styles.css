@@ -1,0 +1,40 @@
+.structure-header {
+    grid-area: header;
+}
+
+.structure-menu {
+    transition: transform 0.15s linear;
+    grid-area: menu;
+}
+
+.structure-body {
+    grid-area: body;
+    height: 100%;
+    padding: 0 calc(250px + 5%) 0 5%;
+}
+
+.hide-menu {
+    transform: translateX(-250px);
+}
+
+.structure {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "menu"
+        "body";
+}
+
+@media (min-width: 700px) {
+    .structure {
+        grid-template-columns: 250px 1fr;
+        grid-template-rows: 44px 1fr;
+        grid-template-areas: 
+            "header  header"
+            "menu    body";
+    }
+}
